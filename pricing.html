@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing | Rachel Levine-Katz Counselling</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <img src="assets/logo.png" alt="Rachel Levine-Katz Counselling">
+      </a>
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1>Pricing</h1>
+      </div>
+      <div class="container">
+        <div>
+          <h3>Individual Sessions — $175</h3>
+          <p>Each 50-minute counselling session is $175. Services provided by a Registered Social Worker are covered by most extended insurance plans. I recommend that you confirm with your plan prior to booking.</p>
+          <p>I can discuss a sliding scale for clients who don't have insurance coverage.</p>
+        </div>
+        <a href="contact.html" class="btn" style="margin-top: 1.5rem;">Make an appointment</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Rachel Levine-Katz Counselling · Ottawa, ON · <a href="tel:6135194048">(613) 519-4048</a></p>
+  </footer>
+
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navMenu = document.querySelector('nav ul');
+    menuToggle.addEventListener('click', () => navMenu.classList.toggle('open'));
+    navMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navMenu.classList.remove('open')));
+  </script>
+</body>
+</html>

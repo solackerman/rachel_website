@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rachel Levine-Katz Counselling | Grief & Bereavement Counselling in Ottawa</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <img src="assets/logo.png" alt="Rachel Levine-Katz Counselling">
+      </a>
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero hero-centered">
+      <div class="container">
+        <div class="hero-logo">
+          <img src="assets/logo.png" alt="Rachel Levine-Katz Counselling">
+        </div>
+        <div class="hero-content">
+          <p>Virtual counselling for adults navigating grief, loss, serious illness, caregiving, and end-of-life concerns.</p>
+          <p>Compassionate support, offered at your pace.</p>
+          <a href="contact.html" class="btn">Let's connect</a>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+  <footer>
+    <p>Rachel Levine-Katz Counselling · Ottawa, ON · <a href="tel:6135194048">(613) 519-4048</a></p>
+  </footer>
+
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navMenu = document.querySelector('nav ul');
+    menuToggle.addEventListener('click', () => navMenu.classList.toggle('open'));
+    navMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navMenu.classList.remove('open')));
+  </script>
+</body>
+</html>
