@@ -1,4 +1,4 @@
-# Rachel Levine-Katz Counselling
+# Rachel Levine-Katz Grief Counselling and Healthcare Navigation
 
 A website for Rachel Levine-Katz, Registered Social Worker offering grief and bereavement counselling in Ottawa, ON.
 
