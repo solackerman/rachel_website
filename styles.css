@@ -521,15 +521,15 @@ nav .logo {
     font-weight: bold;
   }
   
-  /* Pricing */
-  .pricing-card {
+  /* Fees */
+  .fees-card {
     background-color: var(--mist-blue-grey);
     padding: 2rem;
     border-radius: 8px;
     margin: 2rem 0;
   }
   
-  .pricing-card h3 {
+  .fees-card h3 {
     color: var(--deep-blue-green);
     margin-bottom: 1rem;
   }

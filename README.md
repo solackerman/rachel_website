@@ -7,7 +7,7 @@ A website for Rachel Levine-Katz, Registered Social Worker offering grief and be
 - **index.html** — Home page with hero and intro
 - **about.html** — About Rachel and her approach
 - **services.html** — Areas of support and what to expect
-- **pricing.html** — Session fees, payment methods, and insurance
+- **fees.html** — Session fees, payment methods, and insurance
 - **contact.html** — Contact information
 
 ## Running locally
