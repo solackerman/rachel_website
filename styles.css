@@ -197,6 +197,7 @@ nav .logo {
     flex-direction: column;
     align-items: stretch;
     text-align: center;
+    container-type: inline-size;
   }
   
   .hero.hero-centered .hero-content {
@@ -242,13 +243,16 @@ nav .logo {
   }
   
   .hero-name {
-    font-size: clamp(2.31rem, 6.5vw, 3.31rem);
+    font-size: clamp(0.875rem, 0.55rem + 3.6vw, 3.31rem);
+    font-size: clamp(0.875rem, 0.55rem + 4.25cqi, 3.31rem);
     font-weight: 400;
     color: var(--slate-blue);
     letter-spacing: 0.02em;
     margin: 0 0 0.65rem;
     width: 100%;
+    max-width: 100%;
     text-align: center;
+    white-space: nowrap;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   }
   
@@ -592,6 +596,14 @@ nav .logo {
     padding: 2rem 1.5rem;
     text-align: center;
     font-size: 0.9rem;
+  }
+  
+  footer p {
+    margin: 0 0 0.15em 0;
+  }
+  
+  footer p:last-child {
+    margin-bottom: 0;
   }
   
   footer a {
