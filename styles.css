@@ -165,6 +165,16 @@ nav .logo {
     max-width: 100%;
     box-sizing: border-box;
   }
+
+  /* Fixed nav clears first paint; extra top space before logo lockup */
+  .hero.hero-centered {
+    padding-top: clamp(2.43rem, 6.075vw, 3.24rem);
+  }
+
+  /* Extra buffer below fixed nav (stacks with section padding-top above) */
+  .hero.hero-centered .hero-centered-column {
+    padding-top: clamp(0.405rem, 1.215vw, 0.81rem);
+  }
   
   .hero .container {
     display: grid;
@@ -212,7 +222,7 @@ nav .logo {
   
   /* Dark brand lockup - logo + name + tagline (horizontal padding from .hero-centered-column) */
   .hero-brand {
-    padding: 1rem 0 0.35rem;
+    padding: clamp(0.506rem, 1.62vw, 0.81rem) 0 0.142rem;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -223,16 +233,18 @@ nav .logo {
   
   .hero-brand .hero-logo {
     margin-top: 0;
-    margin-bottom: 0.45rem;
+    margin-bottom: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     max-width: 550px;
+    padding-top: clamp(0.61rem, 2.03vw, 1.12rem);
+    padding-bottom: clamp(0.61rem, 2.03vw, 1.12rem);
   }
   
   .hero-brand .hero-logo img {
-    max-width: 500px;
+    max-width: 330px;
     width: 100%;
     height: auto;
     display: block;
@@ -248,7 +260,7 @@ nav .logo {
     font-weight: 400;
     color: var(--slate-blue);
     letter-spacing: 0.02em;
-    margin: 0 0 0.65rem;
+    margin: clamp(0.35rem, 1.22vw, 0.71rem) 0 0.65rem;
     width: 100%;
     max-width: 100%;
     text-align: center;
@@ -310,7 +322,7 @@ nav .logo {
   }
   
 .hero-logo img {
-  max-width: 520px;
+  max-width: 341px;
   width: 100%;
   height: auto;
   max-height: none;
@@ -392,19 +404,21 @@ nav .logo {
     }
   
     .hero-logo img {
-      max-width: 400px;
+      max-width: 277px;
     }
   
     .hero-brand .hero-logo {
       max-width: 100%;
+      padding-top: clamp(0.507rem, 2.03vw, 0.912rem);
+      padding-bottom: clamp(0.51rem, 2.03vw, 0.912rem);
     }
   
     .hero-brand .hero-logo img {
-      max-width: min(400px, 92vw);
+      max-width: min(277px, calc(92vw * 0.682));
     }
   
     .hero-brand {
-      padding: 0.85rem 0 0.25rem;
+      padding: 0.345rem 0 0.102rem;
     }
   
     /* Allow taglines to wrap on small screens */
