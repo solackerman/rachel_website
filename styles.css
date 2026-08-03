@@ -553,6 +553,19 @@ nav .logo {
   }
   
   /* Contact */
+  .contact-address {
+    padding-left: 1.5rem;
+  }
+
+  .contact-address a {
+    color: var(--soft-teal-sage);
+    text-decoration: none;
+  }
+
+  .contact-address a:hover {
+    text-decoration: underline;
+  }
+
   .contact-info {
     margin: 2rem 0;
   }
